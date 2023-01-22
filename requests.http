@@ -1,0 +1,72 @@
+GET https://localhost:7251/users/1
+
+###
+
+GET https://localhost:7251/users
+
+###
+
+POST https://localhost:7251/users
+Content-Type: application/json
+
+{
+    "Id": 0,
+    "Name": "User 1"
+}
+
+###
+
+POST https://localhost:7251/users
+Content-Type: application/json
+
+{
+    "Id": 0,
+    "Name": "User 2"
+}
+
+###
+
+POST https://localhost:7251/users
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "Name": "User 1"
+}
+
+###
+
+POST https://localhost:7251/users/1
+Content-Type: application/json
+
+
+###
+
+PUT https://localhost:7251/users
+Content-Type: application/json
+
+###
+
+PUT https://localhost:7251/users/1
+Content-Type: application/json
+
+{
+    "Name": "User 2"
+}
+
+###
+
+PUT https://localhost:7251/users/3
+Content-Type: application/json
+
+{
+    "Name": "User 3"
+}
+
+###
+
+DELETE https://localhost:7251/users
+
+###
+
+DELETE https://localhost:7251/users/1
